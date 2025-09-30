@@ -39,21 +39,18 @@ Sempre que um filtro está ativo (seja por texto ou por clique), um botão de te
 
 É o **ponto de entrada** do aplicativo e o "dono" da nossa tela.
 
-* **Analogia:** Pense na `MainActivity` como o **maestro de uma orquestra**. Ela não toca os instrumentos, mas é responsável por preparar o palco (a janela do app) e chamar o músico principal, que no nosso caso é a função `GamesScreen`. É a classe que conecta o mundo do sistema Android com o mundo da nossa interface gráfica feita em Jetpack Compose.
 * **No nosso projeto:** A única responsabilidade dela é configurar o tema e chamar o Composable `GamesScreen`, onde toda a lógica da nossa tela acontece.
 
 ### 📁 components
 
 Este pacote contém pequenos blocos de UI reutilizáveis.
 
-* **Analogia:** Pense nos componentes como **peças de LEGO**. Criamos peças pequenas e especializadas, como um `GameCard` (para mostrar um jogo na lista) ou um `StudioCard` (para mostrar um estúdio na barra de filtro). Depois, na tela principal (`GamesScreen`), nós simplesmente montamos essas peças para construir a interface completa. Isso evita a repetição de código e mantém a tela principal mais limpa.
 * **No nosso projeto:** Contém os arquivos `GameCard.kt` e `StudioCard.kt`.
 
 ### 📁 model
 
 Este pacote define a **estrutura dos dados** com os quais nosso aplicativo trabalha.
 
-* **Analogia:** É como o **molde de um bolo** ou um **formulário de cadastro**. Ele não é o bolo em si, nem o cadastro preenchido, mas define a *forma* que os dados devem ter. No nosso caso, ele define que um "Jogo" (`Game`) precisa ter um ID, um título, um nome de estúdio e um ano de lançamento.
 * **No nosso projeto:** Contém a `data class` `Game.kt`, que é o nosso modelo de dados.
 
 ### 📁 repository
