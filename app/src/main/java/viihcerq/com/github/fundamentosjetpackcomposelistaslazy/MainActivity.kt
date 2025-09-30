@@ -64,11 +64,6 @@ class MainActivity : ComponentActivity() {
                 fontWeight = FontWeight.Bold
             )
             Spacer(modifier = Modifier.height(16.dp))
-            LazyColumn() {
-                items(getAllGames()) {
-                    GameCard(game = it)
-                }
-            }
             OutlinedTextField(
                 value = searchTextState,
                 onValueChange = { searchTextState = it },
